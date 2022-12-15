@@ -18,7 +18,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  height: 250px;
+  height: 220px;
   width: 550px;
   background: transparent;
   border-radius: 5px;
@@ -43,7 +43,7 @@ main {
   font-size: 60px;
   color: #fff;
   /* flex-direction: row; */
-   margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .clock span {
@@ -62,4 +62,31 @@ footer {
   bottom: 0;
   padding: 16px 0;
 }
+
+@media screen and (max-width: 425px) {
+  .clock {
+    height: 165px;
+    width: 355px;
+  }
+
+  .clock div {
+    height: 140px;
+    width: 100px;
+  }
+
+  .date-wrapper {
+    font-weight: bolder;
+    font-size: 42px;
+  }
+
+  .clock span {
+    font-weight: bolder;
+    font-size: 42px;
+  }
+
+  .clock span.time {
+    font-size: 12px;
+  }
+}
+
 
