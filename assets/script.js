@@ -16,10 +16,28 @@ const clock = setInterval(function time() {
   let nowMonth = dateToday.getMonth() + 1
   let nowYear = dateToday.getFullYear()
 
+  if (nowHour < 10) {
+    nowHour = "0" + nowHour
+  }
+  if (nowMinute < 10) {
+    nowMinute = "0" + nowMinute
+  }
+
+  if (nowSecond < 10) {
+    nowSecond = "0" + nowSecond
+  }
+
   hour.textContent = nowHour
   minute.textContent = nowMinute
   second.textContent = nowSecond
 
+  if (nowDay < 10) {
+    nowDay = "0" + nowDay
+  }
+
+  if (nowMonth < 10) {
+    nowMonth = "0" + nowMonth
+  }
   day.textContent = nowDay
   month.textContent = nowMonth
   year.textContent = nowYear
