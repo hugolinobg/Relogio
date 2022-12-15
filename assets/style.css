@@ -41,7 +41,7 @@ main {
 .clock div.date-wrapper {
   font-weight: bolder;
   font-size: 60px;
-  top: 275px;
+  top: 290px;
   flex-direction: row;
   position: absolute;
   background: transparent;
