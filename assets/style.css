@@ -18,7 +18,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  height: 325px;
+  height: 350px;
   width: 550px;
   background: transparent;
   border-radius: 5px;
@@ -41,7 +41,7 @@ main {
 .clock div.date-wrapper {
   font-weight: bolder;
   font-size: 60px;
-  top: 290px;
+  top: 300px;
   flex-direction: row;
   position: absolute;
   background: transparent;
