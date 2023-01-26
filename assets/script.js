@@ -4,6 +4,7 @@ const second = document.getElementById("second")
 const day = document.getElementById("day")
 const month = document.getElementById("month")
 const year = document.getElementById("year")
+const currentYear = document.querySelector(".newYear");
 
 const clock = setInterval(function time() {
   let dateToday = new Date()
@@ -42,3 +43,10 @@ const clock = setInterval(function time() {
   month.textContent = nowMonth
   year.textContent = nowYear
 })
+
+function currentFullYear() {
+  const newYear = new Date().getFullYear();
+  currentYear.textContent = newYear;
+
+}
+currentFullYear()
